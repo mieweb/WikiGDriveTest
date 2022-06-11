@@ -1,0 +1,125 @@
+[
+  {
+    "id": "TO_FILL",
+    "name": ".git.json",
+    "mimeType": "application/binary",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "TO_FILL",
+    "name": ".gitignore",
+    "mimeType": "application/binary",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "TO_FILL",
+    "name": ".tree.json",
+    "mimeType": "application/binary",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "TO_FILL",
+    "name": ".wgd-local-links.csv",
+    "mimeType": "application/binary",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "TO_FILL",
+    "name": "embedded-diagram-example.debug.xml",
+    "mimeType": "application/binary",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "1O9wKbDsMhFCUG207rHq_PvdmflsuYQMzcWbnuq4Sq_U",
+    "name": "/embedded-diagram-example.md",
+    "mimeType": "text/x-markdown",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "1jEOoXqPeqiU_z2QLiC-w6TfPjmiJY4wyLZqoG-OF9Xc",
+    "name": "example-drawing.svg",
+    "mimeType": "image/svg+xml",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "1-r1FsM2FsgSWxdGqGaGUBwNHu-q-0nKW",
+    "name": "example-folder",
+    "mimeType": "application/vnd.google-apps.folder",
+    "parentId": "0APmwe3yIhGabUk9PVA",
+    "children": [
+      {
+        "id": "1Rinu_XTWD_bgCr0DWk-7RnpBWNUQS_F5",
+        "name": "1",
+        "mimeType": "application/vnd.google-apps.folder",
+        "parentId": "1-r1FsM2FsgSWxdGqGaGUBwNHu-q-0nKW",
+        "children": [
+          {
+            "id": "1ao72TT9TlWfvAfUD5Rwp-3l5WTeOUBZ7",
+            "name": "2",
+            "mimeType": "application/vnd.google-apps.folder",
+            "parentId": "1Rinu_XTWD_bgCr0DWk-7RnpBWNUQS_F5",
+            "children": [
+              {
+                "id": "1YbMUOsgZsQzuhNlwWXVVnymok_y2x7UT",
+                "name": "3",
+                "mimeType": "application/vnd.google-apps.folder",
+                "parentId": "1ao72TT9TlWfvAfUD5Rwp-3l5WTeOUBZ7",
+                "children": [
+                  {
+                    "id": "1ZRgpuicJWKlkVFEDdJ8tXJPCJ58Gmjrm",
+                    "name": "4",
+                    "mimeType": "application/vnd.google-apps.folder",
+                    "parentId": "1YbMUOsgZsQzuhNlwWXVVnymok_y2x7UT",
+                    "children": [
+                      {
+                        "id": "TO_FILL",
+                        "name": "sub-folder-example-file.debug.xml",
+                        "mimeType": "application/binary",
+                        "parentId": "1ZRgpuicJWKlkVFEDdJ8tXJPCJ58Gmjrm"
+                      },
+                      {
+                        "id": "1VJData_dBw7D7dVikk5yJuYuRmh-E-09grQDt_UGwaY",
+                        "name": "/example-folder/1/2/3/4/sub-folder-example-file.md",
+                        "mimeType": "text/x-markdown",
+                        "parentId": "1ZRgpuicJWKlkVFEDdJ8tXJPCJ58Gmjrm"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TO_FILL",
+    "name": "index.debug.xml",
+    "mimeType": "application/binary",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "1KZ45LytrvLZ3Np_EC_x5Uv6fy8xHLhvJyDNfC6i4xtc",
+    "name": "/index.md",
+    "mimeType": "text/x-markdown",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "TO_FILL",
+    "name": "readme.debug.xml",
+    "mimeType": "application/binary",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "id": "1wlRv3bZ5Z84TD9Oba4-lEorfV_R9aKhJyRS2iCInA7w",
+    "name": "/readme.md",
+    "mimeType": "text/x-markdown",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  },
+  {
+    "name": "/toc.md",
+    "mimeType": "text/x-markdown",
+    "parentId": "0APmwe3yIhGabUk9PVA"
+  }
+]
