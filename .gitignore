@@ -2,3 +2,8 @@
 .git.json
 .wgd-directory.yaml
 *.debug.xml
+
+git.json
+.wgd-local-links.csv
+.wgd-local-log.csv
+.tree.json
