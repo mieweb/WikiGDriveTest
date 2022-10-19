@@ -1,13 +1,13 @@
 ---
 id: '1WfXOsKmPgOtdsZxXdl6RpqMrlkQP2O1GrprnaFxK0oE'
 title: 'Change test'
-date: '2022-10-08T14:56:03.459Z'
-version: 101
-lastAuthor: 'Doug Horner'
+date: '2022-10-16T12:29:41.217Z'
+version: 123
+lastAuthor: 'Grzegorz Godlewski'
 mimeType: 'text/x-markdown'
 links: []
 source: 'https://drive.google.com/open?id=1WfXOsKmPgOtdsZxXdl6RpqMrlkQP2O1GrprnaFxK0oE'
-wikigdrive: '9b0dd6ad234cc100906eae868ea09c3cbdc087b8'
+wikigdrive: 'bdb68e63156753acc30f2539ffb4dcdbb53e7db3'
 ---
 
 Add some more changes
@@ -17,8 +17,6 @@ Hi there!
 
 
 One more change
-Another one
+Another one from Bridget
 Hhhhhhhhhhhhhhhhhh
-Zzzzz
-
 
