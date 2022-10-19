@@ -18,7 +18,7 @@ links:
   - 'https://en.wikipedia.org/wiki/Wikipedia:Disambiguation'
   - 'https://en.wikipedia.org/wiki/WYSIWYM'
 source: 'https://drive.google.com/open?id=1H6vwfQXIexdg4ldfaoPUjhOZPnSkNn6h29WD6Fi-SBY'
-wikigdrive: 'd3cd3b0f5d63f9db416cf08561efc32c91df5834'
+wikigdrive: '704c4fe1aaaa74ad2fb0297c05950cb382709924'
 menu:
   main:
     name: 'This is an'
