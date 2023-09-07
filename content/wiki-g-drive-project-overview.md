@@ -2,7 +2,7 @@
 id: '1H6vwfQXIexdg4ldfaoPUjhOZPnSkNn6h29WD6Fi-SBY'
 title: 'Wiki G Drive Project Overview'
 date: '2022-08-27T13:50:59.205Z'
-version: 870
+version: 874
 lastAuthor: 'Grzegorz Godlewski'
 mimeType: 'text/x-markdown'
 links:
@@ -18,47 +18,47 @@ links:
   - 'https://en.wikipedia.org/wiki/Wikipedia:Disambiguation'
   - 'https://en.wikipedia.org/wiki/WYSIWYM'
 source: 'https://drive.google.com/open?id=1H6vwfQXIexdg4ldfaoPUjhOZPnSkNn6h29WD6Fi-SBY'
-wikigdrive: '8ca6a5aaba99e163ce26837b45c6127e767eec68'
+wikigdrive: '45041011164387b02e49bf64b8ba752b3fad2a1d'
 menu:
   main:
     name: 'This is an'
     identifier: '1H6vwfQXIexdg4ldfaoPUjhOZPnSkNn6h29WD6Fi-SBY'
     weight: 30
 ---
-* [Wiki G Drive Project Overview](#wiki-g-drive-project-overview)
-* [Overview](#overview)
-* [Requirements](#requirements)
-* [Instructions (proposed)](#instructions-proposed)
-* [Renames and Redirecting](#renames-and-redirecting)
-* [Collisions with Filenames](#collisions-with-filenames)
-* [Table of Contents and Index](#table-of-contents-and-index)
-* [Table of Contents](#table-of-contents)
-* [Index](#index)
-* [Markdown Cleanup](#markdown-cleanup)
-* [Macros to Hugo Shortcodes (issue)](#_m5135xwpqj94)
-* [Images](#images)
+* [Wiki G Drive Project Overview](#wiki-g-drive-project-overview)  
+* [Overview](#overview)  
+* [Requirements](#requirements)  
+* [Instructions (proposed)](#instructions-proposed)  
+* [Renames and Redirecting](#renames-and-redirecting)  
+* [Collisions with Filenames](#collisions-with-filenames)  
+* [Table of Contents and Index](#table-of-contents-and-index)  
+* [Table of Contents](#table-of-contents)  
+* [Index](#index)  
+* [Markdown Cleanup](#markdown-cleanup)  
+* [Macros to Hugo Shortcodes (issue)](#_m5135xwpqj94)  
+* [Images](#images)  
+* [FAQ](#faq)
+  
+# Wiki G Drive Project Overview  
+
+
+* [Wiki G Drive Project Overview](#wiki-g-drive-project-overview)  
+* [Overview](#overview)  
+* [Requirements](#requirements)  
+* [Instructions (proposed)](#instructions-proposed)  
+* [Renames and Redirecting](#renames-and-redirecting)  
+* [Collisions with Filenames](#collisions-with-filenames)  
+* [Table of Contents and Index](#table-of-contents-and-index)  
+* [Table of Contents](#table-of-contents)  
+* [Index](#index)  
+* [Markdown Cleanup](#markdown-cleanup)  
+* [Macros to Hugo Shortcodes (issue)](#_m5135xwpqj94)  
+* [Images](#images)  
 * [FAQ](#faq)
 
-# Wiki G Drive Project Overview
-
-
-* [Wiki G Drive Project Overview](#wiki-g-drive-project-overview)
-* [Overview](#overview)
-* [Requirements](#requirements)
-* [Instructions (proposed)](#instructions-proposed)
-* [Renames and Redirecting](#renames-and-redirecting)
-* [Collisions with Filenames](#collisions-with-filenames)
-* [Table of Contents and Index](#table-of-contents-and-index)
-* [Table of Contents](#table-of-contents)
-* [Index](#index)
-* [Markdown Cleanup](#markdown-cleanup)
-* [Macros to Hugo Shortcodes (issue)](#_m5135xwpqj94)
-* [Images](#images)
-* [FAQ](#faq)
-
-
-## Overview
-
+  
+## Overview  
+  
 WikiGDrive is a node app that uses the [Google Drive API](https://developers.google.com/drive/api/v3/quickstart/nodejs) to transform Google Docs and Drawings into markdown.
 
 With a "Shared Drive" as the key, WikiGDrive:
@@ -71,16 +71,16 @@ With a "Shared Drive" as the key, WikiGDrive:
 
 WikiGDrive scans for changes in the drive and then refresh the local converted files.
 
-
-![](../wiki-g-drive-project-overview.assets/10000201000002BA0000014677CF8B0989637F71.png)
+  
+![](../wiki-g-drive-project-overview.assets/4440124749dd073aa503e73de0caadb5.png)  
 
 
 The WikiGDrive refreshes the "Local Filesystem" with changes from the Google Shared Drive overwriting or deleting any content to bring it into sync.  The Local Filesystem is not preserved (since we will be committing the markdown in github anyway).
 
 
 
-
-## Requirements
+  
+## Requirements  
 
 
 The app must:
@@ -105,8 +105,8 @@ Later phase:
 * Markdown -> Google Docs converter
 
 
-
-## Instructions (proposed)
+  
+## Instructions (proposed)  
 
 
 npm install wikigdrive
@@ -115,18 +115,18 @@ node_modules/bin/wikigdrive -h
 
 wikigdrive [shared drive url]
 
-Options:
-—config (.wikigdrive)
-—user
-—pass
-—dest (current working folder)
+Options:  
+—config (.wikigdrive)  
+—user  
+—pass  
+—dest (current working folder)  
 —watch (keep scanning for changes, ie: daemon)
 
 wikigdrive keeps a local JSON config file in the dest directory with state from prior runs. The config contains a map of URL driveIds to the local filenames along with metadata about each file. 
 
-
-## Renames and Redirecting 
-
+  
+## Renames and Redirecting   
+  
 When a Document is renamed or moved in the shared drive the driveId says the same, but its place in the filesystem changes. For example a document named "Carbon" would be created as Carbon.md. Sometime later its renamed to "Carbon Fiber" then a new file "Carbon Fiber.md" would be made with the content and the old "Carbon.md" is changed to:
 
 
@@ -160,56 +160,56 @@ Then sometime later, "Example 1" is renamed to "Sample 1" the folder layout shou
    * Example-2.md -> /Container/Example-2.md
 
 
-
-## Collisions with Filenames
-
+  
+## Collisions with Filenames  
+  
 Google Drive allows filenames with the same name to be created on shared drives.  When transforming them into the local filesystem, each file will be renamed to a new file and a disambiguation page will be placed in their place.  Eg:
 
-Google Drive              Folder
-  Carbon                    Carbon-1.md		
-  Carbon                    Carbon-2.md
+Google Drive              Folder  
+  Carbon                    Carbon-1.md		  
+  Carbon                    Carbon-2.md  
                             Carbon.md 
 
 The contents of Carbon.md would show each of the conflicting references:
 
-    There were two documents with the same name in the same folder.
-    * [Carbon](Carbon-1.md) 
-    * [Carbon](Carbon-2.md) 
+    There were two documents with the same name in the same folder.  
+    * [Carbon](Carbon-1.md)   
+    * [Carbon](Carbon-2.md)   
  
-
-## Table of Contents and Index
-
+  
+## Table of Contents and Index  
+  
 In the root of the local filesystem two files will be created: the toc.md and index.md
-
-### Table of Contents
-
+  
+### Table of Contents  
+  
 The table of contents is a layout of the documents and their position in the drive as an unordered list. It should not contain redirected files, images, etc. 
-
-### Index
-
+  
+### Index  
+  
 The index is a listing of all of the defined terms and their references in the documents.  The processing may be passed to another tool to construct the index. Examples: [kramdown](https://meta.stackexchange.com/questions/72395/is-it-possible-to-have-definition-lists-in-markdown), [Asciidoctor](https://asciidoctor.org/docs/user-manual/)
-
-## Markdown Cleanup
+  
+## Markdown Cleanup  
 
 * Bold headings: ([issue](https://github.com/mieweb/wikiGDrive/issues/17)) Remove the ** bold markdown from all headings.
-  <img src="../wiki-g-drive-project-overview.assets/10000201000001A500000049F701D2E918EB49BA.png" />
+  <img src="../wiki-g-drive-project-overview.assets/480b7e2fd2be48d07802ff3582b4c72a.png" />  
 
 * End of line bold text: ([issue](https://github.com/mieweb/wikiGDrive/issues/15)) The closing ** for bold text at the end of a line is being placed on a newline and not being parsed.
-  <img src="../wiki-g-drive-project-overview.assets/10000201000005480000004B13D041970DE765C6.png" />
+  <img src="../wiki-g-drive-project-overview.assets/fb4997da023a1d1234b47a7ec1bce1f2.png" />  
 
 * Italics/bold in an unordered list: ([issue](https://github.com/mieweb/wikiGDrive/issues/16)) Italics are not being rendered if in a list item.  We may need to find these and replace the */** with em/strong tags. Example is rendered in browser next to [Google Doc](https://drive.google.com/open?id=108WScoxxGKKKOsGWF7UNZ4rLRanGXu6BPdJ-axjVn5s).
-  <img src="../wiki-g-drive-project-overview.assets/1000020100000243000000F294CFFF9C3FC58539.png" />
+  <img src="../wiki-g-drive-project-overview.assets/8dde8f07cbf22bb432dd03c8f0ecc1e6.png" />  
 
 
-
-## Images
-
+  
+## Images  
+  
 Two kinds of images exist within Google Docs:  1) Embedded images stored within the document and 2) images that are referenced to another "Drawing" on the google drive.  WikiGDrive processes images by placing them in a folder named with a similar name to the page.  (eg:  index.md would result in a folder index.images with each embedded image in that folder).
 
 If you make a drawing somewhere in the google drive folder and link it in the google document (WITH A HYPERLINK b/c Google does not expose the internal link via the api) then WikiGDrive will process the drawing as a SVG and place a proper reference to the SVG in the markdown.
 
-
-## FAQ
+  
+## FAQ  
 
 * What is the purpose of this tool?
    * To enable collaborative editing of documentation and the ability to publish that documentation as well as linking it to revision control system branches (like in git)
