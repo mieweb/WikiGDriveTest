@@ -1,8 +1,8 @@
 ---
 id: '1KZ45LytrvLZ3Np_EC_x5Uv6fy8xHLhvJyDNfC6i4xtc'
 title: '_index'
-date: '2023-09-07T13:38:09.323Z'
-version: 55
+date: '2023-09-07T13:38:22.009Z'
+version: 58
 lastAuthor: 'Doug Horner'
 mimeType: 'text/x-markdown'
 links: []
@@ -13,6 +13,10 @@ This is an example document with an embedded SVG:
 
   
 ![](./_index.assets/0a870b0e58be95881b2fd593da1301b9.png)  
+
+
+  
+![](./_index.assets/b5043111a97425efeb337e6b94c9c405.png)  
 
 
 
